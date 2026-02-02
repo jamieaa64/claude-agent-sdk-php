@@ -1,5 +1,5 @@
 {
-  "name": "local/claude-agent-sdk-php",
+  "name": "jamieaa64/claude-agent-sdk-php",
   "type": "library",
   "autoload": {
     "psr-4": {
