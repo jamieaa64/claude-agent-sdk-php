@@ -60,7 +60,7 @@ final class Client {
     $this->transport = $this->customTransport ?? new SubprocessCLITransport($actualPrompt ?? '', $options);
     $this->transport->connect();
 
-    if ($this->isStreaming) {
+    if ($this->isStreaming && !$options->skipInitialize) {
       $this->initialize();
     }
 
